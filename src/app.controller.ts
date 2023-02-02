@@ -10,7 +10,7 @@ import { LocalAuthGuard } from "./auth/local-authgard";
 export class AppController {
   constructor(private readonly authService: AuthService) {}
 
-  @Post("/login")
+ 
   @UseGuards(LocalAuthGuard)
 
   @Post('/login')
@@ -22,7 +22,7 @@ export class AppController {
 
   @UseGuards(JwtAuthGuard)
   @Get('/protected')
-  getHello(@Request() req): string {
+  get(@Request() req): string {
     return req.user
   }
 }

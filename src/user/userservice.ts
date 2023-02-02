@@ -8,7 +8,7 @@ export class UserService{
 
     {
         
-        username:"user1",
+    username:"user1",
     password:"pass1",
     email:"user1@getMaxListeners.com",
     age:25

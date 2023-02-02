@@ -8,7 +8,7 @@ import { LocalStratergy } from './local.strategy';
 @Module({
     imports: [PassportModule,UserModule, JwtModule.register({
         secret:"newuser",
-        signOptions: { expiresIn: '60s' },
+        signOptions: { expiresIn: '3600s' },
       })],
     controllers: [],
     providers: [LocalStratergy,AuthService,JwtStrategy],
